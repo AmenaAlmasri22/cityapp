@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import '../../core/constant/color.dart';
 import '../../core/constant/imageassets.dart';
 
@@ -28,7 +27,11 @@ class DrawerHomePage extends StatelessWidget {
               style: TextStyle(color: AppColor.white, fontSize: 15.sp)),
         ),
         ListTile(
-          leading: Icon(Icons.groups, color: AppColor.white, size: 25.sp),
+          leading: Icon(
+            Icons.groups,
+            color: AppColor.white,
+            size: 25.sp,
+          ),
           title: Text("المشرفين",
               style: TextStyle(color: Colors.white, fontSize: 15.sp)),
         ),
@@ -48,11 +51,6 @@ class DrawerHomePage extends StatelessWidget {
           leading:
               Icon(Icons.view_list_rounded, color: AppColor.white, size: 25.sp),
           title: Text("القوائم ",
-              style: TextStyle(color: AppColor.white, fontSize: 15.sp)),
-        ),
-        ListTile(
-          leading: Icon(Icons.sms, color: AppColor.white, size: 25.sp),
-          title: Text("الرسائل",
               style: TextStyle(color: AppColor.white, fontSize: 15.sp)),
         ),
         ListTile(

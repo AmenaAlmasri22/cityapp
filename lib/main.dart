@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -18,13 +17,20 @@ class MyHttpOverrides extends HttpOverrides {
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // await FlutterDownloader.initialize();
   await initalservicse();
   HttpOverrides.global = MyHttpOverrides();
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
@@ -39,11 +45,4 @@ class MyApp extends StatelessWidget {
               getPages: routes);
         });
   }
-}
-
-final List<String> city = ['damas', 'damas', 'damas'];
-
-class Cityy {
-  Cityy(this.name);
-  final String name;
 }

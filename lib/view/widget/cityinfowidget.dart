@@ -5,23 +5,28 @@ Widget cityInfo(String c) => ListTile(
       title: Row(
         children: [
           SizedBox(
-            width: 30.sp,
+            width: 30.w,
           ),
-          const Icon(
-            Icons.not_interested,
-            color: Color.fromARGB(255, 0, 13, 23),
+          IconButton(
+            icon:
+                Icon(Icons.not_interested, color: Color.fromRGBO(0, 13, 23, 1)),
+            onPressed: () {},
           ),
-          const Icon(
-            Icons.delete,
-            color: Color.fromARGB(255, 0, 13, 23),
+          IconButton(
+            icon: Icon(Icons.delete, color: Color.fromARGB(255, 0, 13, 23)),
+            onPressed: () {},
           ),
-          const Icon(
-            Icons.edit_outlined,
-            color: Color.fromARGB(255, 0, 13, 23),
+          IconButton(
+            icon: Icon(Icons.edit_outlined,
+                color: Color.fromARGB(255, 0, 13, 23)),
+            onPressed: () {},
           ),
-          const Icon(
-            Icons.remove_red_eye_rounded,
-            color: Color.fromARGB(255, 0, 13, 23),
+          IconButton(
+            icon: Icon(
+              Icons.remove_red_eye_rounded,
+              color: Color.fromARGB(255, 0, 13, 23),
+            ),
+            onPressed: () {},
           ),
           SizedBox(
             width: 100.sp,

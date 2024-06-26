@@ -31,7 +31,7 @@ class _SignInState extends State<SignIn> {
               Padding(
                 padding: EdgeInsets.only(left: 65.sp),
                 child: SizedBox(
-                  height: 300.sp,
+                  height: 300.h,
                   width: double.infinity,
                   child: Image.asset(
                     AssestImage.logo,
@@ -47,10 +47,10 @@ class _SignInState extends State<SignIn> {
                 ),
               ),
               SizedBox(
-                height: 30.sp,
+                height: 30.h,
               ),
               Padding(
-                padding: EdgeInsets.only(left: 30.sp, right: 30.sp),
+                padding: EdgeInsets.only(left: 30.w, right: 30.w),
                 child: Column(
                   children: [
                     Container(
@@ -74,7 +74,7 @@ class _SignInState extends State<SignIn> {
                       ),
                     ),
                     SizedBox(
-                      height: 10.sp,
+                      height: 10.h,
                     ),
                     Container(
                       decoration: BoxDecoration(
@@ -100,15 +100,15 @@ class _SignInState extends State<SignIn> {
                       ),
                     ),
                     SizedBox(
-                      height: 50.sp,
+                      height: 50.h,
                     ),
                     Container(
                         decoration: BoxDecoration(
                             color: AppColor.primary,
                             borderRadius:
                                 BorderRadius.all(Radius.circular(50.sp))),
-                        height: 50.sp,
-                        width: 150.sp,
+                        height: 50.h,
+                        width: 150.w,
                         child: TextButton(
                             style: ButtonStyle(
                                 shape: MaterialStateProperty.all<

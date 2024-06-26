@@ -1,10 +1,8 @@
 // ignore_for_file: unused_local_variable
 
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../core/class/statusrequest.dart';
+
 import '../core/constant/routes.dart';
 import '../core/services/services.dart';
 import '../data/signindata.dart';
